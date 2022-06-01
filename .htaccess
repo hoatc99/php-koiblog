@@ -1,0 +1,17 @@
+#Thêm / vào cuối URL
+
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{REQUEST_URI} !#
+
+RewriteCond %{REQUEST_URI} !(.*)/$
+
+RewriteRule ^(.*)$ http://domain.com/$1/ [L,R=301]
+
+################################################################################
+
+#Bỏ đuôi mở rộng .php của file web
+
+RewriteRule ^(([^/]+/)*[^.]+)$ /$1.php [L]
