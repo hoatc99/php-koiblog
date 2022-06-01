@@ -145,7 +145,7 @@
             $imgPath = $folder . $imgNewName;
 
             if (move_uploaded_file($_FILES[$imgName]['tmp_name'], $imgPath)) {
-                $imgUrl = "https://localhost:8080/php/HCE/koiblog/admin/images/blog-images/" . $imgNewName;
+                $imgUrl = "https://koiblog.herokuapp.com/admin/images/blog-images/" . $imgNewName;
             } else {
                 formError("erroruploading{$imgType}image");
             }
