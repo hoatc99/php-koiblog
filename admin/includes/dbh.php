@@ -1,9 +1,9 @@
 <?php
 
-    $servername = 'localhost';
-    $dbUsername = 'root';
-    $dbPassword = '';
-    $dbName = 'myblog';
+    $servername = 'byt3adjecddqfpnhuj91-mysql.services.clever-cloud.com';
+    $dbUsername = 'ukjs091upjezxrbf';
+    $dbPassword = 'cXiAVmralrRtrA6i4IdE';
+    $dbName = 'byt3adjecddqfpnhuj91';
     
     $conn = mysqli_connect($servername, $dbUsername, $dbPassword, $dbName);
 
